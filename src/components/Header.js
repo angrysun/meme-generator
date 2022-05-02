@@ -1,8 +1,13 @@
 export default function Header() {
   return (
     <div className="header">
-      <h2>Meme Generator</h2>
-      <h5>React Course - Project 3</h5>
+      {/* <img
+        src="./images/troll-face.png"
+        className="header--image"
+        alt="troll-face"
+      /> */}
+      <h2 className="header--title">Meme Generator</h2>
+      <h5 className="header--project">React Course - Project 3</h5>
     </div>
   )
 }
