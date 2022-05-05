@@ -58,6 +58,10 @@ main {
   cursor: pointer;
 }
 
+.meme--image {
+  max-width: 100%;
+}
+
 .counter {
   display: flex;
   align-items: flex-end;
