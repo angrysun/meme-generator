@@ -10,7 +10,7 @@ export default function SecondBox(props) {
     <div
       style={styles}
       className="box"
-      onClick={props.toggleBox}
+      onClick={()=>props.toggleBox(props.id)}
     >
     </div>
   )
