@@ -113,4 +113,5 @@ main {
   border: 1px solid black;
   display: inline-block;
   margin-right: 6px;
+  border-radius: 5px;
 }
