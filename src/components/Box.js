@@ -32,9 +32,8 @@ export default function Box(props) {
   const boxElements = boxesArray.map(box => (
     <SecondBox
       key={box.id}
-      id={box.id}
       on={box.on}
-      handleClick={toggleBox}
+      handleClick={() => toggleBox(box.id)}
     />
   ))
 
