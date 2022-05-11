@@ -11,13 +11,13 @@ export default function Box(props) {
       for(let i = 0; i < prevBoxes.length; i++) {
         const currentBox = prevBoxes[i]
         if (currentBox.id === id) {
-          const updatedBoxes = {
+          const updatedBox = {
             ...currentBox,
             on: !currentBox.on
           }
-          newBoxes.push(updatedBoxes)
+          newBoxes.push(updatedBox)
         } else {
-          newBoxes.push(updatedBoxes)
+          newBoxes.push(currentBox)
         }
       }
       return newBoxes
