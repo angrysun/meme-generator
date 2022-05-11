@@ -1,5 +1,7 @@
+import { useState } from "react"
+
 export default function Form() {
-  const [firstName, setFirstName] = React.useState("")
+  const [firstName, setFirstName] = useState("")
 
   function handleChange(event) {
     console.log(event)
