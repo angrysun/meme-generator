@@ -4,7 +4,7 @@ export default function Form() {
   const [firstName, setFirstName] = useState("")
 
   function handleChange(event) {
-    console.log(event)
+    setFirstName(event.target.value)
   }
 
   return (
