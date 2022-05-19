@@ -22,6 +22,13 @@ export default function Form() {
         type="text"
         placeholder="First Name"
         onChange={handleChange}
+        name="firstName"
+      />
+      <input
+        type="text"
+        placeholder="Last Name"
+        onChange={handleChange}
+        name="lastName"
       />
     </form>
   )
