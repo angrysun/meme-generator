@@ -8,7 +8,12 @@ export default function Form() {
   console.log(formData)
 
   function handleChange(event) {
-    setFirstName(event.target.value)
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      }
+    })
   }
 
   return (
