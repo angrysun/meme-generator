@@ -1,7 +1,11 @@
 import { useState } from "react"
 
 export default function Form() {
-  const [firstName, setFirstName] = useState("")
+  const [formData, setFormData] = useState(
+    { firstName: "", lastName: "" }
+  )
+
+  console.log(formData)
 
   function handleChange(event) {
     setFirstName(event.target.value)
