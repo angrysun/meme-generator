@@ -8,11 +8,12 @@ export default function Form() {
       email: "",
       comments: "",
       isFriendly: true,
-      employment: ""
+      employment: "",
+      favColor: ""
     }
   )
 
-  console.log(formData)
+  console.log(formData.favColor)
 
   function handleChange(event) {
     const {name, value, type, checked} = event.target
@@ -57,6 +58,7 @@ export default function Form() {
       />
       <input
         type="checkbox"
+        // id added so we can add associated htmlFor label with it
         id="isFriendly"
         checked={formData.isFriendly}
         onChange={handleChange}
@@ -65,7 +67,6 @@ export default function Form() {
       {/* htmlFor added for cleaner code and clarity */}
       <label htmlFor="isFriendly">Are you friendly?</label>
       <br />
-
       <fieldset>
         <legend>Current employment status</legend>
 
@@ -101,8 +102,25 @@ export default function Form() {
         />
         <label htmlFor="full-time">Full-time</label>
         <br />
-
       </fieldset>
+
+      <label htmlFor="favColor">What is your favorite color?</label>
+      <br />
+      <select
+        id="favColor"
+        value={formData.favColor}
+        onChange={handleChange}
+        name="favColor"
+      >
+        <option value="">-- Choose --</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="indigo">Indigo</option>
+        <option value="violet">Violet</option>
+      </select>
     </form>
   )
 }
