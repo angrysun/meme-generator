@@ -39,7 +39,7 @@ export default function Form() {
         // in order for onChange to work we need a name
         onChange={handleChange}
         name="firstName"
-        // must set value of inputs equal to state that represents each input value
+        // must set the value of inputs equal to state that represents each input value
         value={formData.firstName}
       />
       <input
