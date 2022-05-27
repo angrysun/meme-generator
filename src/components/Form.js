@@ -108,6 +108,7 @@ export default function Form() {
         />
         <label htmlFor="full-time">Full-time</label>
         <br />
+        <br />
       </fieldset>
 
       <label htmlFor="favColor">What is your favorite color?</label>
