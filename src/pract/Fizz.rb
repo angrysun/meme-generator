@@ -8,3 +8,17 @@ def FizzBuzz(num)
 
   end
 end
+
+def spin_words(words)
+  array = words.split(" ")
+  best_array = []
+  array.map do |word|
+    if word.length >= 5 then
+      reverse = word.reverse
+      best_array.push(reverse)
+    else
+      best_array.push(word)
+    end
+  end
+  best_array.join(" ")
+end
