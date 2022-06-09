@@ -20,5 +20,5 @@ def spin_words(words)
       best_array.push(word)
     end
   end
-  best_array.join(" ")
+  best_array.join("")
 end
