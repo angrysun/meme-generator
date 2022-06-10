@@ -5,7 +5,6 @@ def FizzBuzz(num)
     string += "Fizz" if i % 3 == 0
   end
   if test
-
   end
 end
 
