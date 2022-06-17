@@ -69,3 +69,18 @@ defmodule FizzBuzz do
   defp buzz(i) when rem(i, 3)  == 0, do: "Fizz"
   defp buzz(i),                      do: Integer.to_string(i)
 end
+
+
+defmodule Words do
+
+  @seperator ~r/[ _,!&@$%^&:]/u
+
+  def count(sentence) do
+    sentence
+    |> String.downcase() |> String.split(@seperator, trim: true)
+    |> Enum.reduce( %{}, &update_map/2) end
+
+  defp update_map(word, acc) do
+    Map.update(acc, word, 1)
+  end
+end

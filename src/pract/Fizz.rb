@@ -24,8 +24,6 @@ end
 
 
 def duplicate_words(sentence)
-  array = sentence.downcase.split('')
-  array.map do |word|
-    if word.
-  end
+  array = sentence.downcase.split(' ').map(&:split)
+  # sentence.downcase.split(/[.!?]/).map(&:split).reduce(:&)
 end
