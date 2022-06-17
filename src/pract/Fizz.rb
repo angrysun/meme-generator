@@ -21,3 +21,11 @@ def spin_words(words)
   end
   best_array.join("")
 end
+
+
+def duplicate_words(sentence)
+  array = sentence.downcase.split('')
+  array.map do |word|
+    if word.
+  end
+end
