@@ -1,4 +1,4 @@
-defmodule FizzBuzz do
+<%# defmodule FizzBuzz do
   def fizz_buzz(number) do
     cond do
       rem(number, 15) == 0 -> IO.puts("FizzBuzz")
@@ -16,7 +16,7 @@ end
 IO.puts Fizzbuzz.fizz_buzz(15)
 
 
-for x<-1..?d,z=(rem(x,3)<1&&"Fizz"||"")<>(rem(x,5)<1&&"Buzz"||""),do: IO.puts z==""&&x||z
+for x<-1..?d,z=(rem(x,3)<1&&"Fizz"||"")<>(rem(x,5)<1&&""||""),do: IO.puts z==""&&x||z
 1
 2
 ..
@@ -53,18 +53,19 @@ defmodule Person do
     end
 end
 
-IO.puts Person.can_drink(age)
+IO.puts Person.can_drink(age) %>
 
 
 defmodule FizzBuzz do
   def fizz do
     (1..100)
     |> Enum.map(&buzz/1)
+    |> Enum.reject(fn x -> x == "Delete" end)
     |> Enum.each(&IO.puts/1)
   end
 
   defp buzz(i) when rem(i, 15) == 0, do: "FizzBuzz"
-  defp buzz(i) when rem(i, 5)  == 0, do: "Buzz"
+  defp buzz(i) when rem(i, 5)  == 0, do: "Delete"
   defp buzz(i) when rem(i, 3)  == 0, do: "Fizz"
   defp buzz(i),                      do: Integer.to_string(i)
 end
