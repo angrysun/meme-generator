@@ -21,7 +21,6 @@ def html_elements(str)
   return true
 end
 
-
 def demo(str)
   result = html_elements(str)
   puts "#{str} gives us #{result}"
