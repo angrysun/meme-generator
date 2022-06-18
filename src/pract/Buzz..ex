@@ -73,7 +73,7 @@ end
 
 defmodule Words do
 
-  @seperator ~r/[ _,!&@$%^&:]/u
+  @seperator ~r/[ ,.?!]/u
 
   def count(sentence) do
     sentence
@@ -81,6 +81,6 @@ defmodule Words do
     |> Enum.reduce( %{}, &update_map/2) end
 
   defp update_map(word, acc) do
-    Map.update(acc, word, 1)
+    Map.update(acc, word)
   end
 end
