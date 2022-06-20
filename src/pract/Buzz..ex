@@ -43,7 +43,7 @@ defmodule Person do
                 age < 18 ->
                     "Nope!"
                 age < 21 ->
-                    "Not in the US!"
+                    "Not in the USA!"
                 true ->
                 "YES!!!"
             end
