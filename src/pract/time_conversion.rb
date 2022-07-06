@@ -1,0 +1,3 @@
+def timeConversion(s)
+
+end
