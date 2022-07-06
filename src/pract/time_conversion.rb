@@ -7,5 +7,11 @@ def timeConversion(s)
   else
     convert = s.chomp("AM")
   end
-  convert
+
+  if convert.start_with?("24")
+    final = convert.gsub("24", "12")
+  elsif convert.start_with?("12")
+    final = convert.gsub("12", "00")
+  end
+  final
 end
