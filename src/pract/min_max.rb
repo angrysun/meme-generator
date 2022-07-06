@@ -1,0 +1,3 @@
+def miniMaxSum(arr)
+
+end
