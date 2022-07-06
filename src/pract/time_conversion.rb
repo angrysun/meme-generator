@@ -1,8 +1,16 @@
 def timeConversion(s)
-  if s[-2..-1] == 'PM'
-    s.chomp("PM")
+  if s.end_with?('PM')
+    converted = s.chomp("PM")
+    case converted.start_with?
+    when "13"
+      convert = converted.gsub('13', "1")
+    when
+
+    else
+
+    end
   else
-    s.chomp("AM")
+    convert = s.chomp("AM")
   end
-  return s
+  convert
 end
