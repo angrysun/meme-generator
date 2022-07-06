@@ -9,9 +9,11 @@ def timeConversion(s)
   end
 
   if convert.start_with?("24")
-    final = convert.gsub("24", "12")
+    final = "12#{convert[2..-1]}"
   elsif convert.start_with?("12")
-    final = convert.gsub("12", "00")
+    final = "00#{convert[2..-1]}"
+  else
+    final = convert
   end
   final
 end
