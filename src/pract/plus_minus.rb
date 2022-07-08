@@ -14,7 +14,7 @@ def plusMinus(arr)
     end
   end
 
-  puts "%.6f" % (pos.length/n)
-  puts "%.6f" % (neg.length/n)
-  puts "%.6f" % (zero.length/n)
+  puts '%.6f' % (pos.length/n)
+  puts '%.6f' % (neg.length/n)
+  puts '%.6f' % (zero.length/n)
 end
