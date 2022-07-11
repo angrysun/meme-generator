@@ -16,3 +16,11 @@ const colors = [{
   hex: '#33a58c',
   name: 'Niagara'
 }]
+
+export default function ColorRenderer () {
+  return (
+    <div className='color-renderer'>
+      {colors.map(color => <Color key={color.hex} {...color} />)}
+    </div>
+  )
+}
