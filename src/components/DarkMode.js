@@ -3,11 +3,6 @@ import { useState } from "react";
 export default function DarkMode() {
   const [darkMode, setDarkMode] = useState(false);
 
-  function toggleDarkMode() {
-    setDarkMode(prevDarkMode => !prevDarkMode);
-  }
-
-
   return (
     <div className={`page ${darkMode && 'dark-mode'}`}>
       <button className="dark-mode-button" onClick={() => setDarkMode(true)}>Dark Mode</button>
