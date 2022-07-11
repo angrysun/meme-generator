@@ -17,7 +17,7 @@ const colors = [{
   name: 'Niagara'
 }]
 
-export default function ColorRenderer () {
+export default function ColorRenderer() {
   return (
     <div className='color-renderer'>
       {colors.map(color => <Color key={color.hex} {...color} />)}
