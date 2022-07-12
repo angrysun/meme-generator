@@ -2,7 +2,7 @@ import Color from "./Color"
 
 const colors = [{
   hex: '#61dafb',
-  name: 'Turquoise Blue'
+  name: 'Turquoise Blues'
 },
 {
   hex: '#cd7fbb',
