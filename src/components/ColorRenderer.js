@@ -14,7 +14,7 @@ const colors = [{
 },
 {
   hex: '#33a58c',
-  name: 'Niagara'
+  name: 'Niagara Fall'
 }]
 
 export default function ColorRenderer() {
