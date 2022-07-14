@@ -10,7 +10,7 @@ const colors = [{
 },
 {
   hex: '#7b0901',
-  name: 'Dark Burgundy'
+  name: 'Dark Burgundy Red'
 },
 {
   hex: '#33a58c',
