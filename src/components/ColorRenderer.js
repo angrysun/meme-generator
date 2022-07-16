@@ -6,7 +6,7 @@ const colors = [{
 },
 {
   hex: '#cd7fbb',
-  name: 'Sky Magenta'
+  name: 'Sky Magenta Sunset'
 },
 {
   hex: '#7b0901',
