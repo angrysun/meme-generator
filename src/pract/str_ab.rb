@@ -3,7 +3,7 @@ def aThreeFromB(str)
   array = str.each_char.to_a
   array.each_index do |i|
     if (array[i] == 'a') then
-      letters.push(i+4)
+      letters.push(i + 4)
     end
   end
 
