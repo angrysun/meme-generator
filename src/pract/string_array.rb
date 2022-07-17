@@ -11,5 +11,5 @@ def ArrayChallenge(strArr)
     i += 1
   end
 
-  puts final
+  final
 end
