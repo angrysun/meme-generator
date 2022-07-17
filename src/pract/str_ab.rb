@@ -1,0 +1,3 @@
+def aThreeFromB(str)
+
+end
