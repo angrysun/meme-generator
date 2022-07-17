@@ -12,4 +12,6 @@ def aThreeFromB(str)
   else
     answer = false
   end
+
+  answer
 end
