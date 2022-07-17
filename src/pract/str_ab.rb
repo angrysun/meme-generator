@@ -7,5 +7,9 @@ def aThreeFromB(str)
     end
   end
 
-
+  if letters[0] === 'b'
+    answer = true
+  else
+    answer = false
+  end
 end
