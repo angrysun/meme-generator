@@ -16,6 +16,8 @@ function RemoveBrackets(str) {
     if (tally < 0) {
       const positive = tally * -1
       return positive
+    } else {
+      return tally
     }
   }else {
     return 0
