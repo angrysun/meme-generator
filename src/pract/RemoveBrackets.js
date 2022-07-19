@@ -12,7 +12,8 @@ function RemoveBrackets(str) {
   }
 
   if (left.length !== right.length) {
-
+    const tally = left.length - right.length
+    }
   }else {
     return 0
   }
