@@ -11,6 +11,11 @@ function RemoveBrackets(str) {
     }
   }
 
+  if (left.length !== right.length) {
+
+  }else {
+    return 0
+  }
 }
 
 RemoveBrackets()
