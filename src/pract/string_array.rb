@@ -4,7 +4,7 @@ def ArrayChallenge(strArr)
   final = 0
   i = 0
 
-  while i < item_one.length do
+  while i < item_one.length
     if item_one[i] != item_two[i]
       final += 1
     end
