@@ -7,11 +7,11 @@ def aThreeFromB(str)
 
   str[letters[0]] === 'b' ? answer = true : answer = false
 
-  # if str[letters[0]] === 'b'
-  #   answer = true
-  # else
-  #   answer = false
-  # end
+  if str[letters[0]] === 'b'
+    answer = true
+  else
+    answer = false
+  end
 
   answer
 end
