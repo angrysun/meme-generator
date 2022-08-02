@@ -1,4 +1,4 @@
-def aThreeFromB(str)
+def a_three_from_b(str)
   letters = []
   array = str.each_char.to_a
   array.each_index do |i|
