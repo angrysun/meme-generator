@@ -1,4 +1,4 @@
-def ArrayChallenge(strArr)
+def string_array(strArr)
   item_one = strArr[0].split('')
   item_two = strArr[1].split('')
   final = 0
