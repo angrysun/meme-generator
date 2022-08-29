@@ -4,6 +4,7 @@ import DarkMode from './components/DarkMode';
 import Form from './components/Form';
 import Header from './components/Header';
 import Meme from './components/Meme';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Meme />
       <Form />
       <ColorRenderer /> */}
-      <DarkMode />
+      {/* <DarkMode /> */}
+      <SignUp />
     </div>
   );
 }
