@@ -80,6 +80,13 @@ textarea {
   cursor: pointer;
 }
 
+.sign-up-body {
+    margin: 0;
+    background-color: #639;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
 .sign-up-form-container {
   height: 100vh;
   padding: 20px;
