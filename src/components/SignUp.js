@@ -15,7 +15,7 @@ export default function Form() {
       [name]: type === "checkbox" ? checked : value
     }))
   }
-  // console.log(formData)
+  console.log(formData)
 
   function handleSubmit(event) {
     event.preventDefault()
