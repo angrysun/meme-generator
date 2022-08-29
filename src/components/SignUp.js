@@ -15,10 +15,20 @@ export default function Form() {
       [name]: type === "checkbox" ? checked : value
     }))
   }
-  console.log(formData)
+  // console.log(formData)
 
   function handleSubmit(event) {
     event.preventDefault()
+    if (formData.password === formData.passwordConfirmation) {
+      console.log("passwords match")
+    } else {
+      console.log("passwords do not match")
+      return
+    }
+
+    if (formData.joinedNewsletter) {
+      console.log("you joined the newsletter")
+    }
   }
 
   return (
@@ -45,9 +55,9 @@ export default function Form() {
             type="password"
             placeholder="Confirm password"
             className="sign-up-form--input"
-            name="passwordConfirm"
+            name="passwordConfirmation"
             onChange={handleChange}
-            value={formData.passwordConfirm}
+            value={formData.passwordConfirmation}
           />
 
           <div className="sign-up-form--marketing">
