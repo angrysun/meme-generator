@@ -2,13 +2,13 @@ import { useState, useEffect } from "react"
 
 export default function App() {
   const [starWarsData, setStarWarsData] = useState({})
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1)
 
   console.log("Component rendered")
 
   useEffect(() => {
-    console.log("useEffect called")
-    fetch("https://swapi.dev/api/people/1")
+    console.log("Effect ran")
+    fetch(`https://swapi.dev/api/people/${count}`)
       .then(response => response.json())
       .then(data => {
         setStarWarsData(data)
@@ -25,7 +25,7 @@ export default function App() {
     <div>
       <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
       <h2>The count is {count}</h2>
-      <button onClick={() => setCount(prevCount => prevCount + 1)}>Add</button>
+      <button onClick={() => setCount(prevCount => prevCount + 1)}>Get Next Character</button>
     </div>
   )
 }
