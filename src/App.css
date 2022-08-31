@@ -37,6 +37,7 @@ textarea {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
+  height: 65px;
   padding: 4px 32px;
   background-image: linear-gradient(to right, #672280, #A626D3);
   color: white;
@@ -142,6 +143,7 @@ textarea {
 
 .meme--image {
   max-width: 100%;
+  border-radius: 3px;
 }
 
 .meme--text {
